@@ -1,0 +1,89 @@
+/* General filter button styles */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Unified blog post item styles */
+  .blog-post-item {
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+  }
+  
+  .blog-post-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .blog-post-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .blog-banner-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .blog-content {
+    margin-top: 15px;
+  }
+  
+  .blog-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .blog-category {
+    margin-right: 10px;
+  }
+  
+  .dot {
+    height: 4px;
+    width: 4px;
+    background-color: var(--light-gray-70);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .h3.blog-item-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+  }
+  
+  .blog-text {
+    font-size: 0.95em;
+  }
+  
+  /* Pagination styles - using CSS variables for consistency */
+  .pagination .page-link {
+    background-color: var(--eerie-black-2);
+    color: var(--white-2);
+    border: 1px solid var(--jet);
+  }
+  
+  .pagination .page-link:hover {
+    background-color: var(--jet);
+  }
+  
+  .pagination .page-item.disabled .page-link {
+    background-color: var(--jet);
+    color: var(--light-gray-70);
+    cursor: not-allowed;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: var(--orange-yellow-crayola);
+    color: var(--white-1);
+    border-color: var(--orange-yellow-crayola);
+  }
+  
